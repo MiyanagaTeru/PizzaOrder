@@ -1,3 +1,4 @@
+<h2>Select Toppings</h2>
 <div class="item button" ng-repeat="musttopping in curPizza.mustToppings">
 	<label class="fourcols" ng-class="{ selected: order.toppings.indexOf(musttopping) > -1 }"><input type="checkbox" ng-click="toggleSelection(musttopping)" ng-checked="true" disabled="disabled" name="toppings[]" value="{{ musttopping }}" >{{ musttopping }}</label>
 </div>

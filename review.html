@@ -1,15 +1,15 @@
 <div class="review">
-	<h3>Review of Your Order</h3>
+	<h2>Review of Your Order</h2>
 	<div>
-		<h4>Your order will be delivered by:</h4>
+		<h3>Your order will be delivered by:</h3>
 			<p>{{ order.franchise }} @ {{ order.location }}</p>
 	</div>
 	<div>
-		<h4>Speciality:</h4>
+		<h3>Speciality:</h3>
 			<p> {{ order.speciality }}</p>
 	</div>
 	<div>
-		<h4>Toppings: </h4>
+		<h3>Toppings: </h3>
 		<ul>
 			<li ng-repeat = "topping in order.toppings">
 			{{ topping }}

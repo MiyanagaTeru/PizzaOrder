@@ -2,7 +2,9 @@
 <html ng-app="orderPizza">
   <head>
     <title>Order Pizza Online</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.15/angular-animate.js"></script>
+        
     <script src="app.js"></script> 
     <script src="form-contents.js"></script>
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
@@ -10,12 +12,12 @@
   <body ng-controller="OrderController as orderCtrl">
  	<form ng-controller="progressBarController as tab">
   		<progress-bar></progress-bar>
-  		<div class = "formContent">
-	 		<locations ng-show = "tab.isSet(1)"></locations>
-	 		<franchises ng-show = "tab.isSet(2)"></franchises>	 		
- 	 		<specialities ng-show = "tab.isSet(3)"></specialities>
-	 		<toppings ng-show = "tab.isSet(4)"></toppings>
-	 		<review ng-show = "tab.isSet(5)"></review>
+  		<div>
+	 		<locations class = "formContent" ng-show = "tab.isSet(1)"></locations>
+	 		<franchises class = "formContent"  ng-show = "tab.isSet(2)"></franchises>	 		
+ 	 		<specialities class = "formContent"  ng-show = "tab.isSet(3)"></specialities>
+	 		<toppings class = "formContent"  ng-show = "tab.isSet(4)"></toppings>
+	 		<review class = "formContent"  ng-show = "tab.isSet(5)"></review>
 	 	</div>
  	</form> 
   </body>
