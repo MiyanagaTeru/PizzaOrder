@@ -1,0 +1,4 @@
+<h2>Select a Speciality</h2>
+<div class="item button" ng-repeat="speciality in curSpecialities">
+	<label class="threecols" ng-class="{ selected: speciality.pizzaName === order.speciality }"><input type="radio" ng-click="filterBySpeciality(speciality.pizzaName); tab.next()" ng-model="order.speciality" name="speciality" value="{{ speciality.pizzaName }}">{{ speciality.pizzaName  }}</label>
+</div>

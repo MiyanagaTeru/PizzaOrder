@@ -1,0 +1,24 @@
+<!-- ProgressBar as a tab -->
+<ul class="proBar">
+	<li class="button back" ng-class="{ inactive: tab.tab <= 1 }" >
+  		<a ng-click = "tab.back()" ng-disabled = "tab.tab <= 1" href>Back</a>
+	</li>
+	<li class="button" ng-class="{ active: tab.isSet(1), done: tab.tab > 1, notyet: tab.tab < 1  }">
+		<a ng-click = "tab.setTab(1)" href>Location</a>
+	</li>
+	<li class="button" ng-class="{ active: tab.isSet(2), done: tab.tab > 2, notyet: tab.tab < 2  }">
+		<a ng-click = "tab.setTab(2)" href>Franchise</a>
+	</li>		
+	<li class="button" ng-class="{ active: tab.isSet(3), done: tab.tab > 3, notyet: tab.tab < 3  }">
+		<a ng-click = "tab.setTab(3)" href>Speciality</a>
+	</li>
+	<li class="button" ng-class="{ active: tab.isSet(4), done: tab.tab > 4, notyet: tab.tab < 4  }">
+		<a ng-click = "tab.setTab(4)" href>Toppings</a>			
+	</li>
+	<li class="button" ng-class="{ active: tab.isSet(5), done: tab.tab > 5, notyet: tab.tab < 5  }">
+		<a ng-click = "tab.setTab(5)" href>Review and Submit</a>			
+	</li>
+	<li class="button next" ng-class="{ inactive: tab.tab >= 5 }" >
+  		<a ng-click = "tab.next()" ng-disabled = "tab.tab >= 5"  href>Next</a>
+	</li>			
+</ul>

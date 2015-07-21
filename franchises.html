@@ -1,0 +1,4 @@
+<h2>Select a Franchise</h2>
+<div class="item button" ng-repeat="franchise in curFranchises">
+	<label class="onecol"  ng-class="{ selected: franchise.franchiseName === order.franchise }"><input type="radio" ng-click = "filterByFranchise(franchise.franchiseName); tab.next()" ng-model="order.franchise" name="franchise" value="{{ franchise.franchiseName }}">{{ franchise.franchiseName  }}</label>
+</div>

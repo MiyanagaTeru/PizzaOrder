@@ -1,0 +1,110 @@
+[
+  {
+    "location": "New York",
+    "franchises": [
+      {
+        "franchiseName": "New York Pizza No.1",
+        "pizzas": [
+          {
+            "pizzaName": "NY Cheese",
+            "mustToppings": [],
+            "optToppings": [
+              "Sausage"
+            ]
+          },
+          {
+            "pizzaName": "NY Veggie",
+            "mustToppings": [
+              "Mushrooms"
+            ],
+            "optToppings": [
+              "Bell Pepper"
+            ]
+          },
+          {
+            "pizzaName": "NY Meat",
+            "mustToppings": [
+              "Pepperoni"
+            ],
+            "optToppings": [
+              "Pineapple"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "location": "Chicago",
+    "franchises": [
+      {
+        "franchiseName": "Chicago Pizza",
+        "pizzas": [
+          {
+            "pizzaName": "Chi Cheese",
+            "mustToppings": [],
+            "optToppings": [
+              "Cheddar",
+              " Black Olives"
+            ]
+          },
+          {
+            "pizzaName": "Chi Veggie",
+            "mustToppings": [
+              "Mushrooms"
+            ],
+            "optToppings": [
+              "Spinach",
+              "Onions"
+            ]
+          },
+          {
+            "pizzaName": "Chi Meat",
+            "mustToppings": [
+              "Pepperoni"
+            ],
+            "optToppings": [
+              "Beef",
+              "Ham"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "location": "San Francisco",
+    "franchises": [
+      {
+        "franchiseName": "San Francisco First Pizza",
+        "pizzas": [
+          {
+            "pizzaName": "SF Cheese",
+            "mustToppings": [],
+            "optToppings": [
+              "Onions"
+            ]
+          },
+          {
+            "pizzaName": "SF Veggie",
+            "mustToppings": [
+              "Mushrooms"
+            ],
+            "optToppings": [
+              "Olives"
+            ]
+          },
+          {
+            "pizzaName": "SF Meat",
+            "mustToppings": [
+              "Pepperoni"
+            ],
+            "optToppings": [
+              "Diced Tomatoes"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

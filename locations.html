@@ -1,0 +1,4 @@
+<h2>Select Your Location</h2>
+<div class="item button" ng-repeat="geo in fulldata">
+	<label class="threecols"  ng-class="{ selected: geo.location === order.location }"><input type="radio" ng-click = "filterByLocation(geo.location); tab.next()" ng-model= "order.location" name="location" value="{{ geo.location }}">{{ geo.location }}</label>
+</div>

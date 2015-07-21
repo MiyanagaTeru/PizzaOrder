@@ -1,0 +1,19 @@
+<div class="review">
+	<h3>Review of Your Order</h3>
+	<div>
+		<h4>Your order will be delivered by:</h4>
+			<p>{{ order.franchise }} @ {{ order.location }}</p>
+	</div>
+	<div>
+		<h4>Speciality:</h4>
+			<p> {{ order.speciality }}</p>
+	</div>
+	<div>
+		<h4>Toppings: </h4>
+		<ul>
+			<li ng-repeat = "topping in order.toppings">
+			{{ topping }}
+			</li>
+	</div>
+	<div class="button submit" ng-click="submit(order)">Place Your Order</div>
+</div>
