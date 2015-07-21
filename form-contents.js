@@ -1,3 +1,4 @@
+//This file stores form content directives.
 (function() {
 	var app = angular.module('form-contents', []);
 	app.directive('locations', function(){

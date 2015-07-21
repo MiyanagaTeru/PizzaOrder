@@ -1,0 +1,23 @@
+<!doctype html>
+<html ng-app="orderPizza">
+  <head>
+    <title>Order Pizza Online</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+    <script src="app.js"></script> 
+    <script src="form-contents.js"></script>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  </head>
+  <body ng-controller="OrderController as orderCtrl">
+  <h1>Order a Pizza Online</h1>
+ 	<form ng-controller="progressBarController as tab">
+  		<progress-bar></progress-bar>
+  		<div>
+	 		<locations class = "formContent" ng-show = "tab.isSet(1)"></locations>
+	 		<franchises class = "formContent"  ng-show = "tab.isSet(2)"></franchises><!--add a franchise tab in case there will be multiple franchises at the same location when the company expends in the future-->	 		
+ 	 		<specialities class = "formContent"  ng-show = "tab.isSet(3)"></specialities>
+	 		<toppings class = "formContent"  ng-show = "tab.isSet(4)"></toppings>
+	 		<review class = "formContent"  ng-show = "tab.isSet(5)"></review>
+	 	</div>
+ 	</form> 
+  </body>
+</html>
